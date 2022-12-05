@@ -32,6 +32,7 @@ app.use(express.json());
 app.use(getEthereumPriceTwo);
 
 // routes
+app.use("/", (req, res) => res.send("This is the home page"));
 app.use("/api", transactionRoutes);
 
 module.exports = app;
