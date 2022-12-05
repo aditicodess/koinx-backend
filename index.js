@@ -33,3 +33,5 @@ app.use(getEthereumPriceTwo);
 
 // routes
 app.use("/api", transactionRoutes);
+
+module.exports = app;
